@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "651066176651",
+    "project_id": "akyat-bukid-fba43",
+    "storage_bucket": "akyat-bukid-fba43.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:651066176651:android:bbfe2c589aadc62b75508e",
+        "android_client_info": {
+          "package_name": "com.example.akyatbukid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "651066176651-l92asbbi8p01s0g6p4q7f8lujqrei1jf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKizg0Oj30X4vVOCaBUgvg7HojI27kgG8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "651066176651-l92asbbi8p01s0g6p4q7f8lujqrei1jf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:651066176651:android:d50ad6615375c8e175508e",
+        "android_client_info": {
+          "package_name": "com.example.notifFrame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "651066176651-l92asbbi8p01s0g6p4q7f8lujqrei1jf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKizg0Oj30X4vVOCaBUgvg7HojI27kgG8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "651066176651-l92asbbi8p01s0g6p4q7f8lujqrei1jf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
