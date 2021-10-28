@@ -9,7 +9,8 @@ class SignupPage extends StatefulWidget {
 
 class SignupPageState extends State<SignupPage> {
   final _formKey = GlobalKey<FormState>();
-  final emailExp = new RegExp(r"(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)");
+  final emailExp =
+      new RegExp(r"(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)");
   bool checkBoxValue = false;
   InputDecoration txtDecoration(var str) {
     return InputDecoration(
@@ -19,9 +20,9 @@ class SignupPageState extends State<SignupPage> {
         filled: true,
         fillColor: Color(0xFFe7edeb),
         hintText: str,
-        errorStyle: TextStyle(color:  Colors.orange[400], fontWeight: FontWeight.bold));
+        errorStyle:
+            TextStyle(color: Colors.orange[400], fontWeight: FontWeight.bold));
   }
-
 
 // TextEditingController _email = TextEditingController();
 // TextEditingController emailController = TextEditingController();
@@ -259,7 +260,7 @@ class SignupPageState extends State<SignupPage> {
                               }
                               return null;
                             },
-                            keyboardType: TextInputType.number,
+                            keyboardType: TextInputType.datetime,
                             decoration: txtDecoration('MM/DD/YY'),
                             onChanged: (value) {
                               _birthday = value;
@@ -338,7 +339,7 @@ class SignupPageState extends State<SignupPage> {
                               child: Row(children: [
                                 Row(children: [
                                   Radio(
-                                     activeColor: Colors.orange[400],
+                                    activeColor: Colors.orange[400],
                                     value: 'hiker',
                                     groupValue: _usertype,
                                     onChanged: (val) {
@@ -352,7 +353,7 @@ class SignupPageState extends State<SignupPage> {
                                 SizedBox(width: 15.0),
                                 Row(children: [
                                   Radio(
-                                     activeColor: Colors.orange[400],
+                                    activeColor: Colors.orange[400],
                                     value: 'guide',
                                     groupValue: _usertype,
                                     onChanged: (val) {
@@ -388,7 +389,8 @@ class SignupPageState extends State<SignupPage> {
                           SizedBox(height: 30.0),
                           ElevatedButton(
                             onPressed: () async {
-                              bool isValid = _formKey.currentState.validate() && await AuthService.signUp(
+                              bool isValid = _formKey.currentState.validate() &&
+                                  await AuthService.signUp(
                                       _email,
                                       _password,
                                       _fname,
@@ -396,8 +398,7 @@ class SignupPageState extends State<SignupPage> {
                                       _address,
                                       _contact,
                                       _birthday,
-                                      _usertype) 
-                                  ;
+                                      _usertype);
                               if (isValid) {
                                 Navigator.pop(context);
                               } else {
